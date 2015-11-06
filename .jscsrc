@@ -1,0 +1,415 @@
+{
+    // In general, if a rule requires a Boolean it only accepts true; to ignore rule, set to null
+    // See http://jscs.info/rules for full rule set
+
+    // Requires that a function expression be named.
+    "disallowAnonymousFunctions": null,
+    // ES6 | Disallows arrow functions.
+    "disallowArrowFunctions": null,
+    // Requires the first alphabetical character of a comment to be lowercase.
+    "disallowCapitalizedComments": null,
+    // Disallows commas as last token on a line in lists.
+    "disallowCommaBeforeLineBreak": null,
+    // Disallows curly braces after statements.
+    // Boolean or Array
+    "disallowCurlyBraces": null,
+    // Disallows identifiers that start or end in _.
+    "disallowDanglingUnderscores": null,
+    // Disallows empty blocks (except for catch blocks).
+    "disallowEmptyBlocks": true,
+    // Disallows function declarations.
+    "disallowFunctionDeclarations": true,
+    // Disallows identical destructuring names for the key and value in favor of using shorthand destructuring.
+    "disallowIdenticalDestructuringNames": null,
+    // Disallows a specified set of identifier names.
+    // Array
+    "disallowIdentifierNames": null,
+    // Disallows implicit type conversion.
+    "disallowImplicitTypeConversion": [ "string" ],
+    // Disallows keywords in your comments, such as TODO or FIXME.
+    // Boolean, String or Array.
+    "disallowKeywordsInComments": null,
+    // Disallows placing keywords on a new line.
+    "disallowKeywordsOnNewLine": null,
+    // Disallows usage of specified keywords.
+    "disallowKeywords": [ "with" ],
+    // Requires lines to not contain both spaces and tabs consecutively, or spaces after tabs only for alignment if "smart"
+    "disallowMixedSpacesAndTabs": true,
+    // Disallows the test, consequent and alternate to be on separate lines when using the ternary operator.
+    // Boolean
+    "disallowMultiLineTernary": null,
+    // Disallows multiple blank lines in a row.
+    "disallowMultipleLineBreaks": true,
+    // Disallows strings that span multiple lines without using concatenation.
+    "disallowMultipleLineStrings": true,
+    // Disallows multiple indentation characters (tabs or spaces) between identifiers, keywords, and any other token.
+    // Boolean or Object.
+    "disallowMultipleSpaces": true,
+    // Disallows multiple var declaration (except for-loop).
+    "disallowMultipleVarDecl": null,
+    // Disallows unassigned functions to be named inline
+    // Boolean
+    "disallowNamedUnassignedFunctions": null,
+    // Disallows nested ternaries.
+    // Boolean, Integer
+    "disallowNestedTernaries": null,
+    // Disallows newline before opening curly brace of all block statements.
+    "disallowNewlineBeforeBlockStatements": true,
+    // Disallow use of certain node types (from Esprima/ESTree).
+    // Array
+    "disallowNodeTypes": null,
+    // Disallows the not, not equals, and strict not equals operators in conditionals.
+    // Boolean
+    "disallowNotOperatorsInConditionals": null,
+    // Disallows placing object keys on new line
+    // Boolean
+    "disallowObjectKeysOnNewLine": null,
+    // Requires putting certain operators on the next line rather than on the current line before a line break.
+    "disallowOperatorBeforeLineBreak": ["+", "."],
+    // Disallow a newline after blocks
+    // Boolean
+    "disallowPaddingNewLinesAfterBlocks": null,
+    // Disallow a blank line after 'use strict'; statements
+    // Boolean
+    "disallowPaddingNewLinesAfterUseStrict": null,
+    // Disallows newline before module.exports
+    // Boolean
+    "disallowPaddingNewLinesBeforeExport": null,
+    // Disallow an empty line above the specified keywords.
+    // Boolean
+    "disallowPaddingNewlinesBeforeKeywords": null,
+    // Disallows newline before line comments
+    // Boolean
+    "disallowPaddingNewLinesBeforeLineComments": null,
+    // Disallows blocks from beginning or ending with 2 newlines.
+    "disallowPaddingNewlinesInBlocks": true,
+    // Disallows newlines adjacent to curly braces in all object literals.
+    "disallowPaddingNewLinesInObjects": null,
+    // ES6| Disallows parentheses around arrow function expressions with a single parameter.
+    // Boolean
+    "disallowParenthesesAroundArrowParam": null,
+    // Disallows quoted keys in object if possible.
+    "disallowQuotedKeysInObjects": true,
+    // Disallows lines from ending in a semicolon.
+    "disallowSemicolons": null,
+    // ES6 | Require arrow functions to use a block statement (explicit return).
+    // Boolean
+    "disallowShorthandArrowFunctions": null,
+    // Requires sticking binary operators to the right.
+    "disallowSpaceAfterBinaryOperators": null,
+    // Disallows spaces after commas
+    // Boolean
+    "disallowSpaceAfterComma": null,
+    // Disallows space after keyword.
+    "disallowSpaceAfterKeywords": [ "do" ],
+    // Requires that a line comment (//) not be followed by a space.
+    "disallowSpaceAfterLineComment": null,
+    // Disallows space after object keys.
+    "disallowSpaceAfterObjectKeys": true,
+    // Requires sticking unary operators to the right.
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "~"],
+    // Requires sticking binary operators to the left.
+    "disallowSpaceBeforeBinaryOperators": null,
+    // Disallows space before block statements (for loops, control structures).
+    "disallowSpaceBeforeBlockStatements": null,
+    // Disallows spaces before commas
+    "disallowSpaceBeforeComma": true,
+    // Disallows space before keyword.
+    "disallowSpaceBeforeKeywords": null,
+    // Disallows space before object values.
+    "disallowSpaceBeforeObjectValues": null,
+    // Requires sticking unary operators to the left.
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    // Disallows spaces before semicolons.
+    // Boolean
+    "disallowSpaceBeforeSemicolon": true,
+    // Ensure there are no spaces after argument separators in call expressions.
+    "disallowSpaceBetweenArguments": null,
+    // Disallows space before () or {} in anonymous function expressions.
+    "disallowSpacesInAnonymousFunctionExpression": null,
+    // Disallows space before () in call expressions.
+    "disallowSpacesInCallExpression": true,
+    // Disallows space before and/or after ? or : in conditional expressions. Requires a true value or an object.
+    "disallowSpacesInConditionalExpression": null,
+    // Disallow spaces in between for statement.
+    // Boolean
+    "disallowSpacesInForStatement": null,
+    // Disallows space before () or {} in function declarations.
+    "disallowSpacesInFunctionDeclaration": null,
+    // Disallows space before () or {} in function expressions (both named and anonymous).
+    "disallowSpacesInFunctionExpression": null,
+    // Disallows space before () or {} in function expressions (both named and anonymous) and function declarations.
+    // Object
+    "disallowSpacesInFunction": null,
+    // Disallows space before () or {} in named function expressions.
+    "disallowSpacesInNamedFunctionExpression": null,
+    // Disallows space after opening array square bracket and before closing. Reports only on arrays, not on property accessors. Use disallowSpacesInsideBrackets to report on all brackets.
+    "disallowSpacesInsideArrayBrackets": null,
+    // Disallows space after opening square bracket and before closing. Reports on all on brackets, even on property accessors. Use disallowSpacesInsideArrayBrackets to exclude property accessors.
+    // Boolean or Object
+    "disallowSpacesInsideBrackets": null,
+    // Disallows space after opening object curly brace and before closing.
+    // Boolean, String or Object
+    // "disallowSpacesInsideObjectBrackets": "null",
+    // Disallows space after opening round bracket and before closing.
+    "disallowSpacesInsideParentheses": null,
+    // Disallows space after opening and before closing grouping parentheses.
+    // Boolean or Object
+    "disallowSpacesInsideParenthesizedExpression": null,
+    // Disallows tabs everywhere.
+    // Boolean
+    "disallowTabs": true,
+    // Disallows an extra comma following the final element of an array or object literal.
+    "disallowTrailingComma": true,
+    // Requires all lines to end on a non-whitespace character
+    "disallowTrailingWhitespace": true,
+    // Disallows unused params in function expression and function declaration.
+    // Boolean
+    "disallowUnusedParams": true,
+    // Requires the variable to be the left hand operator when doing a boolean comparison
+    "disallowYodaConditions": true,
+    // Validate jsdoc comments
+    "jsDoc": {
+        "checkParamNames": true,
+        "requireParamTypes": true
+    },
+    // Requires all lines to be at most the number of characters specified
+    "maximumLineLength": 120,
+    // Requires the file to be at most the number of lines specified
+    // Integer or Object
+    "maximumNumberOfLines": null,
+    // Enforces indentation of parameters in multiline functions
+    // Boolean, String, Number
+    "requireAlignedMultilineParams": true,
+    // Requires proper alignment in object literals.
+    "requireAlignedObjectValues": null,
+    // Requires that a function expression be anonymous.
+    "requireAnonymousFunctions": null,
+    // ES6 | Requires that arrow functions are used instead of anonymous function expressions in callbacks.
+    // Boolean
+    "requireArrowFunctions": null,
+    // Requires blocks to begin and end with a newline
+    "requireBlocksOnNewline": true,
+    // Requires identifiers to be camelCased or UPPERCASE_WITH_UNDERSCORES
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    // Requires the first alphabetical character of a comment to be uppercase, unless it is part of a multi-line textblock.
+    "requireCapitalizedComments": true,
+    // Requires constructors to be capitalized (except for this)
+    "requireCapitalizedConstructors": true,
+    // Requires commas as last token on a line in lists.
+    "requireCommaBeforeLineBreak": true,
+    // Requires curly braces after statements.
+    "requireCurlyBraces": [ "if", "else", "for", "while", "do", "try", "catch" ],
+    // Require a $ before variable names that are jquery assignments.
+    // Boolean or String
+    "requireDollarBeforejQueryAssignment": true,
+    // Requires member expressions to use dot notation when possible
+    "requireDotNotation": true,
+    // Requires function declarations by disallowing assignment of functions expressions to variables. Function expressions are allowed in all other contexts, including when passed as function arguments or immediately invoked.
+    "requireFunctionDeclarations": null,
+    // Requires placing keywords on a new line.
+    "requireKeywordsOnNewLine": ["else"],
+    // Requires placing line feed after assigning a variable.
+    "requireLineBreakAfterVariableAssignment": true,
+    // Requires placing line feed at file end.
+    // Boolean
+    "requireLineFeedAtFileEnd": null,
+    // Requires function names to match member and property names.
+    // Boolean
+    "requireMatchingFunctionName": true,
+    // Requires the test, consequent and alternate to be on separate lines when using the ternary operator.
+    // Boolean
+    "requireMultiLineTernary": null,
+    // Requires multiple var declaration (i.e., var a = 1, b = 2; NOT var a = 1; var b = 2;)
+    "requireMultipleVarDecl": true,
+    // Require unassigned functions to be named inline
+    // Boolean
+    "requireNamedUnassignedFunctions": null,
+    // Requires newline before opening curly brace of all block statements.
+    "requireNewlineBeforeBlockStatements": null,
+    // ES6 | Requires use of binary, hexadecimal, and octal literals instead of parseInt.
+    // Boolean
+    "requireNumericLiterals": null,
+    // Requires placing object keys on new line
+    "requireObjectKeysOnNewLine": true,
+    // Requires operators to appear before line breaks and not after.
+    "requireOperatorBeforeLineBreak": null,
+    // Requires an extra blank newline after var declarations, as long as it is not the last expression in the current block.
+    "requirePaddingNewLineAfterVariableDeclaration": true,
+    // Requires newline after blocks
+    "requirePaddingNewLinesAfterBlocks": null,
+    // Requires a blank line after 'use strict'; statements
+    // Boolean
+    "requirePaddingNewLinesAfterUseStrict": null,
+    // Requires newline before module.exports
+    // Boolean
+    "requirePaddingNewLinesBeforeExport": null,
+    // Requires an empty line above the specified keywords unless the keyword is the first expression in a block.
+    "requirePaddingNewlinesBeforeKeywords": [
+        "do",
+        "for",
+        "switch",
+        "try",
+        "while",
+        "with"
+    ],
+    // Requires newline before line comments
+    // Boolean or Object
+    "requirePaddingNewLinesBeforeLineComments": null,
+    // Requires blocks to begin and end with 2 newlines
+    "requirePaddingNewlinesInBlocks": null,
+    // Requires newline inside curly braces of all objects.
+    "requirePaddingNewLinesInObjects": null,
+    // ES6 | Requires parentheses around arrow function expressions with a single parameter.
+    // Boolean
+    "requireParenthesesAroundArrowParam": null,
+    // Requires parentheses around immediately invoked function expressions.
+    "requireParenthesesAroundIIFE": true,
+    // Requires quoted keys in objects.
+    // Boolean
+    "requireQuotedKeysInObjects": null,
+    // Requires semicolon after: var declaration, expression statement, return, throw, break, continue, do-while
+    // Boolean
+    "requireSemicolons": true,
+    // ES6 | Require arrow functions to use an expression body when returning a single statement (no block statement, implicit return).
+    // Boolean
+    "requireShorthandArrowFunctions": null,
+    // Disallows sticking binary operators to the right.
+    "requireSpaceAfterBinaryOperators": true,
+    // Requires space after comma
+    // Boolean, or Object
+    "requireSpaceAfterComma": true,
+    // Requires space after keyword.
+    // Array or Boolean
+    "requireSpaceAfterKeywords": [
+        "do",
+        "for",
+        "if",
+        "else",
+        "switch",
+        "case",
+        "try",
+        "catch",
+        "void",
+        "while",
+        "with",
+        "return",
+        "typeof",
+        "function"
+    ],
+    // Requires that a line comment (//) be followed by a space.
+    "requireSpaceAfterLineComment": true,
+    // Requires space after object keys.
+    "requireSpaceAfterObjectKeys": null,
+    // Disallows sticking unary operators to the right.
+    "requireSpaceAfterPrefixUnaryOperators": null,
+    // Disallows sticking binary operators to the left.
+    "requireSpaceBeforeBinaryOperators": true,
+    // Requires space(s) before block statements (for loops, control structures).
+    "requireSpaceBeforeBlockStatements": true,
+    // Requires space before comma
+    // Boolean
+    "requireSpaceBeforeComma": null,
+    // Requires space before keyword.
+    "requireSpaceBeforeKeywords": true,
+    // Requires space after object keys.
+    "requireSpaceBeforeObjectValues": true,
+    // Disallows sticking unary operators to the left.
+    "requireSpaceBeforePostfixUnaryOperators": null,
+    // Ensure there are spaces after argument separators in call expressions.
+    "requireSpaceBetweenArguments": true,
+    // ES6 | Requires space before and after * in generator functions
+    // Object
+    "requireSpacesInGenerator": null,
+    // Requires space before () or {} in anonymous function expressions.
+    // Object
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    // Requires space before () in call expressions.
+    "requireSpacesInCallExpression": null,
+    // Requires space before and/or after ? or : in conditional expressions.
+    "requireSpacesInConditionalExpression": true,
+    // Requires spaces inbetween for statement.
+    // Boolean
+    "requireSpacesInForStatement": true,
+    // Requires space before () or {} in function declarations.
+    // Object
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    // Requires space before () or {} in function expressions (both named and anonymous).
+    // Object
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    // Requires space before () or {} in function expressions (both named and anonymous) and function declarations.
+    // Object
+    "requireSpacesInFunction": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    // Requires space before () or {} in named function expressions.
+    // Object
+    "requireSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    // Requires space after opening array square bracket and before closing. Reports only on arrays, not on property accessors. Use requireSpacesInsideBrackets to report on all brackets.
+    // String or Object
+    "requireSpacesInsideArrayBrackets": {
+        "allExcept": [ "[", "]" ]
+    },
+    // Requires space after opening square bracket and before closing. Reports on all on brackets, even on property accessors. Use requireSpacesInsideArrayBrackets to exclude property accessors.
+    // Boolean or Object
+    "requireSpacesInsideBrackets": true,
+    // Requires space after opening object curly brace and before closing.
+    // String or Object
+    "requireSpacesInsideObjectBrackets": "all",
+    // Requires space after opening round bracket and before closing.
+    "requireSpacesInsideParentheses": {
+        "all": true,
+        "except": [ "{", "}", "(", ")", "]" ]
+    },
+    // Requires space after opening and before closing grouping parentheses.
+    // Boolean or Object
+    "requireSpacesInsideParenthesizedExpression": true,
+    // ES6 | Disallows using .apply in favor of the spread operator
+    // Boolean
+    "requireSpread": null,
+    // ES6 | Requires the use of template strings instead of string concatenation.
+    // Boolean or Object
+    "requireTemplateStrings": null,
+    // Requires an extra comma following the final element of an array or object literal.
+    "requireTrailingComma": null,
+    // Requires var declaration to be on the top of an enclosing scope
+    // Boolean
+    "requireVarDeclFirst": true,
+    // Requires the variable to be the right hand operator when doing a boolean comparison
+    "requireYodaConditions": null,
+    // Option to check var that = this expressions
+    "safeContextKeyword": null,
+    // Validates proper alignment of function parameters.
+    // Boolean, Object
+    "validateAlignedFunctionParameters": null,
+    // This rule is for validating the positioning of line comments. Block comments are ignored.
+    // Object
+    "validateCommentPosition": null,
+    // Validates indentation for switch statements and block statements
+    "validateIndentation": 4,
+    // Option to check line break characters
+    "validateLineBreaks": "LF",
+    // Requires each element in array on a single line when array length is more than passed maximum number or array fills more than one line.
+    // Boolean, Integer, Object
+    "validateNewlineAfterArrayElements": null,
+    // Validates the order in object keys.
+    // Boolean or String
+    "validateOrderInObjectKeys": null,
+    // Enable validation of separators between function parameters. Will ignore newlines.
+    "validateParameterSeparator": ", ",
+    // Requires all quote marks to be either the supplied value, or consistent if true
+    "validateQuoteMarks": "'"
+}
